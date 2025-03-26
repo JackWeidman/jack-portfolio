@@ -3,30 +3,25 @@ import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
-
-
   return (
-    <>
-      <div className="card bg-base-100 w-96 shadow-sm">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+    <section className="min-h-screen flex flex-col items-center justify-center">
+      <section className="flex flex-col items-center justify-center flex-grow">
+        <div className="card bg-accent w-96 shadow-sm mt-16">
+          <figure>
+            <img src="src/assets/me.png" alt="John W" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title text-stone-800">John Weidman</h2>
+            <p className="text-stone-800">
+              Welcome to my personal portfolio! I'm a software engineer with a
+              passion for building web applications and exploring new
+              technologies.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
       <Footer />
-    </>
+    </section>
   );
 }
 
